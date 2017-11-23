@@ -1,7 +1,7 @@
 #pragma once
 #include "MSG.h"
+#include "MSGSubject.h"
 
-class MSGSubject;
 
 class IMSGObserver
 {

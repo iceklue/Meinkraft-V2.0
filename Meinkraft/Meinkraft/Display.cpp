@@ -2,7 +2,7 @@
 #include "Display.h"
 #include "GL/glew.h"
 
-
+using namespace Engine;
 Display::Display(char* title)
 	:	TITLE("Display: " + std::string(title)), System(TITLE)
 {
@@ -20,6 +20,13 @@ void Display::OnNotify(MSG _msg)
 	case MSG_QUIT:
 		Close();
 		System::isRunning = false;
+		break;
+	case MSG_RESIZE:
+		SDL_Log("Window %d resized to %dx%d",
+		window, reinterpret_cast<int*>(_msg.data)[0],
+			reinterpret_cast<int*>(_msg.data)[1]);
+		WIDTH = reinterpret_cast<int*>(_msg.data)[0]; HEIGHT = reinterpret_cast<int*>(_msg.data)[1];
+		Resize(reinterpret_cast<int*>(_msg.data)[0], reinterpret_cast<int*>(_msg.data)[1]);
 		break;
 	default:
 		break;

@@ -8,7 +8,7 @@ void MSGSubject::Notify(MSG _msg, IMSGObserver* _to)
 {
 	if (_to == nullptr)
 	{
-		for (auto i = 0; i < m_observers.size(); i++)
+		for (unsigned int i = 0; i < m_observers.size(); i++)
 		{
 			ListHelper::GetElementAtIndex(m_observers, i)->OnNotify(_msg);
 		}

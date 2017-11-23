@@ -6,6 +6,6 @@ public:
 	Model();
 	~Model();
 private:
-	RawModel m_rawModel;
+	//RawModel& m_rawModel;
 };
 

@@ -3,11 +3,18 @@
 #include <SDL.h>
 #include "System.h"
 #include "Display.h"
+#include "Time.h"
+#include <thread>
+#include "Input.h"
 
 
 Application::Application()
 {
-	if (!CreateSystem(new Display("AWsome")))
+	if (!CreateSystem(new Engine::Time()))
+		System::isRunning = false;
+	if (!CreateSystem(new Engine::Input()))
+		System::isRunning = false;
+	if (!CreateSystem(new Engine::Display("Meinkraft")))
 		System::isRunning = false;
 	//if(!CreateSystem())
 }
