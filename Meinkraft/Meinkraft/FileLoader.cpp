@@ -5,7 +5,7 @@
 #include <sstream>
 #include <stdexcept>
 
-std::string GetFileContents(const std::string& filePath)
+std::string Loader::GetFileContents(const std::string& filePath)
 {
 	//Load filestream
 	std::ifstream inFile(filePath);

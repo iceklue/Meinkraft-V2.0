@@ -1,6 +1,7 @@
 #pragma once
 
-
-std::string GetFileContents(const std::string& filePath);
-
+namespace Loader
+{
+	std::string GetFileContents(const std::string& filePath);
+}
 

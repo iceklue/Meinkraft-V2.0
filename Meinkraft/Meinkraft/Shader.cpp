@@ -5,11 +5,10 @@
 #include <glm/gtc/type_ptr.hpp>
 
 Shader::Shader(const std::string& vertexFile, const std::string& fragmentFile)
-	: m_programID(LoadShaders(vertexFile, fragmentFile))
+	: m_programID(Loader::LoadShaders(vertexFile, fragmentFile))
 {
 	UseProgram();
 }
-
 
 void Shader::LoadInt(GLuint location, int value)
 {
