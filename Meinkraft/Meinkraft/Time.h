@@ -11,6 +11,7 @@ namespace Engine
 		static double time;
 		static double delta;
 		void OnNotify(MSG _msg) override;
+		void Update();
 		~Time();
 	};
 }

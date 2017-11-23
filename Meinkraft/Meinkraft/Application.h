@@ -1,6 +1,8 @@
 #pragma once
 #include "System.h"
 #include "MSGSubject.h"
+#include <SDL_hints.h>
+
 class Application
 {
 public:
@@ -15,4 +17,5 @@ private:
 	bool CreateSystem(System* _system);
 
 };
+
 

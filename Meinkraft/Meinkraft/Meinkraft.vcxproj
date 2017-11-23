@@ -158,9 +158,12 @@
     <ClInclude Include="IMSGObserver.h" />
     <ClInclude Include="Input.h" />
     <ClInclude Include="Model.h" />
+    <ClInclude Include="ModelLoader.h" />
     <ClInclude Include="MSG.h" />
     <ClInclude Include="MSGSubject.h" />
+    <ClInclude Include="PrimitiveShapes.h" />
     <ClInclude Include="RawModel.h" />
+    <ClInclude Include="Renderer.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="ShaderLoader.h" />
     <ClInclude Include="SimpleShader.h" />
@@ -178,9 +181,12 @@
     <ClCompile Include="ListHelper.h" />
     <ClCompile Include="Meinkraft.cpp" />
     <ClCompile Include="Model.cpp" />
+    <ClCompile Include="ModelLoader.cpp" />
     <ClCompile Include="MSG.cpp" />
     <ClCompile Include="MSGSubject.cpp" />
+    <ClCompile Include="PrimitiveShapes.cpp" />
     <ClCompile Include="RawModel.cpp" />
+    <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="Shader.cpp" />
     <ClCompile Include="ShaderLoader.cpp" />
     <ClCompile Include="SimpleShader.cpp" />

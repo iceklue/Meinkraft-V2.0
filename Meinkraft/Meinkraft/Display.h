@@ -13,7 +13,8 @@ namespace Engine
 
 		SDL_Window& GetWindow() const;
 		bool IsOpen() const;
-
+		
+		
 	private:
 		bool Initialize();
 

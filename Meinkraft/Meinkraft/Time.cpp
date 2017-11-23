@@ -11,14 +11,18 @@ Time::Time()
 {
 }
 
+void Time::Update()
+{
+	const auto tick_time = SDL_GetTicks() / 1000.0;
+	delta = tick_time - time;
+	time = tick_time;
+}
 
 void Time::OnNotify(MSG _msg)
 {
-	if (_msg.type = MSG_UPDATE)
+	if (_msg.type == MSG_UPDATE)
 	{
-		const auto tick_time = SDL_GetTicks() / 1000.0;
-		delta = tick_time - time;
-		time = tick_time;
+		Update();
 	}
 }
 

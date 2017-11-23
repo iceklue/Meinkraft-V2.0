@@ -11,7 +11,7 @@ uniform vec3 posOffset = vec3(0,0,0);
 
 void main(void)
 {
-	gl_Position = vec4(inPosition.x + velocity.x, inPosition.y + velocity.y,0,1.0);
+	gl_Position = vec4(inPosition.x + posOffset.x, inPosition.y + posOffset.y,0,1.0);
 	
 	passColor = inColor;
 }
