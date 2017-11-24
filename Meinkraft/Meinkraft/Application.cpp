@@ -19,10 +19,7 @@ Application::Application()
 	if (!CreateSystem(new Engine::Input()))
 		System::isRunning = false;
 	if (!CreateSystem(new Engine::Display("Meinkraft")))
-	{
-		
 		System::isRunning = false;
-	}
 		//if(!CreateSystem())
 }
 
@@ -31,10 +28,10 @@ void Application::Loop()
 	dis = reinterpret_cast<Engine::Display*>(m_systems[2]);
 	Renderer renderer(dis->GetWindow());
 	ModelLoader loader;
-	RawModel model = PrimitiveShapes::Triangle(loader);
+	RawModel model = PrimitiveShapes::Rect(loader, 2, 2);
 	SimpleShader shader;
 	Vector3 offset(0,0,0);
-	const int FPS = 244;
+	const int FPS = 1000;
 	//calculate the period
 	double period = 1.0 / (double)FPS;
 	period = period * 1000;

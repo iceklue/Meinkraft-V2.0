@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include "PrimitiveShapes.h"
-#include "ModelLoader.h"
+
 std::vector<float> PrimitiveShapes::verticesTriangle =
 {
 	0,0.1f,0,

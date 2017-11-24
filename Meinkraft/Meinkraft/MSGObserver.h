@@ -3,7 +3,7 @@
 #include "MSGSubject.h"
 
 
-class IMSGObserver
+class MSGObserver
 {
 public:
 	virtual void OnNotify(MSG _msg) = 0;

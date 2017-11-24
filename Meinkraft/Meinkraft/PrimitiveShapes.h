@@ -1,9 +1,8 @@
 #pragma once
 
 #include "RawModel.h"
-
-class ModelLoader;
-
+#include "ModelLoader.h"
+using namespace Loader;
 class PrimitiveShapes
 {
 public:

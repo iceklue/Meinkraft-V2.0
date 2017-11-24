@@ -1,10 +1,10 @@
 #include "stdafx.h"
 #include "MSGSubject.h"
-#include "IMSGObserver.h"
+#include "MSGObserver.h"
 #include "ListHelper.h"
 
 
-void MSGSubject::Notify(MSG _msg, IMSGObserver* _to)
+void MSGSubject::Notify(MSG _msg, MSGObserver* _to)
 {
 	if (_to == nullptr)
 	{
@@ -22,7 +22,7 @@ void MSGSubject::Notify(MSG _msg, IMSGObserver* _to)
 	
 }
 
-void MSGSubject::Subscribe(IMSGObserver* _observer)
+void MSGSubject::Subscribe(MSGObserver* _observer)
 {
 	_observer->m_subject = this;
 	m_observers.push_back(_observer);

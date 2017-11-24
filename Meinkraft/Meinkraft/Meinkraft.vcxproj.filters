@@ -75,9 +75,6 @@
     <ClInclude Include="System.h">
       <Filter>Header Files\Core</Filter>
     </ClInclude>
-    <ClInclude Include="IMSGObserver.h">
-      <Filter>Header Files\Message</Filter>
-    </ClInclude>
     <ClInclude Include="Display.h">
       <Filter>Header Files\Core\Systems</Filter>
     </ClInclude>
@@ -114,8 +111,11 @@
     <ClInclude Include="PrimitiveShapes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MSGObserver.h">
+      <Filter>Header Files\Message</Filter>
+    </ClInclude>
     <ClInclude Include="ModelLoader.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Util</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

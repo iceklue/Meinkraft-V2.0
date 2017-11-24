@@ -1,8 +1,8 @@
 #pragma once
-#include "IMSGObserver.h"
+#include "MSGObserver.h"
 
 class System
-	:	public IMSGObserver
+	:	public MSGObserver
 {
 public:
 	static bool isRunning;

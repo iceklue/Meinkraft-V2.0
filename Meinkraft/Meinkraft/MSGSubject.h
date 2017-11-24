@@ -1,15 +1,15 @@
 #pragma once
 #include "MSG.h"
 
-class IMSGObserver;
+class MSGObserver;
 
 class MSGSubject
 {
 public:
-	void Notify(MSG _msg, IMSGObserver* _to = nullptr);
-	void Subscribe(IMSGObserver* _observer);
+	void Notify(MSG _msg, MSGObserver* _to = nullptr);
+	void Subscribe(MSGObserver* _observer);
 	~MSGSubject();
 private:
-	std::list<IMSGObserver*> m_observers;
+	std::list<MSGObserver*> m_observers;
 };
 

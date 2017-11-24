@@ -155,7 +155,7 @@
     <ClInclude Include="Application.h" />
     <ClInclude Include="Display.h" />
     <ClInclude Include="FileLoader.h" />
-    <ClInclude Include="IMSGObserver.h" />
+    <ClInclude Include="MSGObserver.h" />
     <ClInclude Include="Input.h" />
     <ClInclude Include="Model.h" />
     <ClInclude Include="ModelLoader.h" />
